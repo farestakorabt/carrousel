@@ -1,0 +1,14 @@
+.valeur_curseur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}
+
+.curseur {
+    width: 200px;
+}
+
+.left {
+    float: left;
+}

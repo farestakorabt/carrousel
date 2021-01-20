@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+}
+
+img.pics {
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    top: 0;
+    left: 0;
+}
