@@ -38,7 +38,7 @@ function continuer() {
     {
         $i++;
     } else {
-        echo "Vous avez mal réponsdu \n";
+        echo "Vous avez mal répondu \n";
     }
 
     if($i == 2){

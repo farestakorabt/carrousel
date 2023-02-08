@@ -3,13 +3,13 @@
 var_dump($_POST);
 var_dump($_FILES);
 
-// if(isset($_FILES['image']))
-// {
-//     $image = $_FILES['image']['name'];
-//     $tmp   = $_FILES['image']['tmp_name'];
+if(isset($_FILES['image']))
+{
+    $image = $_FILES['image']['name'];
+    $tmp   = $_FILES['image']['tmp_name'];
 
-//     move_uploaded_file("$tmp", "images/$image");    
-// }
+    move_uploaded_file("$tmp", "images/$image");    
+}
 
 if(isset($_POST['email']))
 {

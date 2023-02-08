@@ -1,0 +1,29 @@
+.image1, .image2, .image3 {
+    width: 30vw;
+    height: 25vw;
+    margin-top: 5vw;
+}
+
+.contactMail {
+    color: grey;
+    font-size: 15px;
+}
+.contactMail:hover {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.image12 img{
+    width: 50vw;
+    height: 65vw;
+}
+
+.succes{
+    color: green;
+    font-size: 3vw;
+}
+
+
+.ajouterButton {
+    background-color: grey;
+}
