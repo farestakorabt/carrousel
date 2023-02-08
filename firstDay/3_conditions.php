@@ -24,21 +24,20 @@
 
     // $choix = readline("Choisir 1, 2 ou 3\n");
 
-    // switch($choix)
-    // {
-    //     case 1 :
-    //         echo "Tu as choisi numero 1\n";
-    //         break;
-    // case 2:
-    //     echo "Tu as choisi numero 2\n";
-    //     break;
-    // case 3:
-    //     echo "Tu as choisi numero 3\n";
-    //     break;
-    // default;
-    //     echo "Aucun des 3 choix";
-
-    // }
+    switch($choix)
+    {
+        case 1 :
+            echo "Tu as choisi numero 1\n";
+            break;
+        case 2:
+            echo "Tu as choisi numero 2\n";
+            break;
+        case 3:
+            echo "Tu as choisi numero 3\n";
+            break;
+        default;
+            echo "Aucun des 3 choix";
+    }
 
 
     // exercice 
