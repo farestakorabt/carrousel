@@ -1,5 +1,7 @@
 <?php
 
+$title = "Page d'ajout";
+
 include_once "include/header.php";
 
 

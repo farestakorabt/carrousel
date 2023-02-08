@@ -1,8 +1,11 @@
 <?php
 
+    $title = "Page contact";
+
+
     require_once "../projet/include/header.php";
 
-    var_dump($_FILES);
+    // var_dump($_FILES);
 
 
     // if(isset($_FILES['fichier']))
@@ -59,32 +62,33 @@
 
 ?>
 
-<img src="../projet/images/biblio4.jpg"  alt="bibliothèque" class="image3">
+<div class="landingPageTitleFirstDiv">
+
+    <div class="divMailRecup">
+<img src="../projet/images/bibliotheque2.jpg"  alt="bibliothèque" class="image3">
+
+        <h2>Contactez nous</h2>
+
+        Ecris nous sur: <a href="mailto:farestakorabt@gmail.com" class="contactMail">bibliotheque@paris.fr</a>
 
 
-<h2>Contactez nous</h2>
-
-Ecris nous sur: <a href="mailto:farestakorabt@gmail.com" class="contactMail">bibliotheque@paris.fr</a>
-
-
-<h2 class="succes"><?= $succes ?></h2>
- 
-<h2 class='image12'><?= $image ?></h2>
+        <h2 class="succes"><?= $succes ?></h2>
+        
+        <h2 class='image12'><?= $image ?></h2>
 
 
-<form action="" method="POST" enctype="multipart/form-data" accept=".jpg, .pdf"> 
-    
-    
-    <input id="fichier" type="file" name="fichier">
-    
-    <input id="envoyer" type="submit" value="Enoyer"> 
-    
-    <h2><?= $erreur ?></h2>
-    
-    
-</form>
+        <form action="" method="POST" enctype="multipart/form-data" accept=".jpg, .pdf">     
+            
+            <input id="fichier" type="file" name="fichier">
+            
+            <input type="submit" value="Envoyer" id="buttonMailRecup"> 
+            
+            <h2><?= $erreur ?></h2>   
+            
+        </form>
 
-
+    </div>
+</div>
 
 
 
@@ -102,6 +106,6 @@ Ecris nous sur: <a href="mailto:farestakorabt@gmail.com" class="contactMail">bib
 <?php 
 
 
-// require_once "./include/footer.php";
+require_once "./include/footer.php";
 
 ?>

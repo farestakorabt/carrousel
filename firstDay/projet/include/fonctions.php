@@ -1,16 +1,20 @@
 <?php
 
-    function lien($lien, $titre)
+function lien($lien, $titre)
+{
+    $actif = "";
+
+
+    $lienTemp = "/firstDay/projet/$lien";
+
+    if($lienTemp === $_SERVER["REQUEST_URI"])
     {
-        $cheminTemp = "firstDay/projet/$lien";
-        $actif = "";
-        
-        if($cheminTemp === $_SERVER["REQUEST_URI"])
-        {
-            $actif = "actif";
-        }
-    return "<a class='$actif' href='$cheminTemp'>$titre</a>";
-    }
+        $actif = "actif";
+    } 
+
+    return "<a class='$actif' href='$lien'>$titre</a>";
+}
+
 
 
 

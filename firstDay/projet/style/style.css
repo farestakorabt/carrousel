@@ -1,0 +1,140 @@
+html {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url("../images/texture-pierre.jpg");
+}
+
+.image1 {
+  width: 30vw;
+  height: 25vw;
+  margin-top: 1vw;
+}
+
+.image2,
+.image3 {
+  width: 30vw;
+  height: 25vw;
+  margin-top: 1vw;
+}
+
+.contactMail {
+  color: grey;
+  font-size: 15px;
+}
+.contactMail:hover {
+  color: forestgreen;
+  font-weight: bold;
+}
+
+.image12 img {
+  width: 50vw;
+  height: 65vw;
+}
+
+.succes {
+  color: green;
+  font-size: 3vw;
+}
+
+.ajouterButton {
+  background-color: grey;
+}
+
+.navigationBar {
+  background-color: rgb(148, 216, 209);
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationBar a {
+  /* background-color: yellow; */
+  margin-left: 0.8vw;
+  font-weight: bold;
+  font-size: .9vw;
+}
+
+.divGenerale {
+  /* background-color: tomato; */
+  padding: 2% 30% 0 30%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  
+}
+.landingPageTitle,
+.quiSommesNousTitre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.8vw;
+}
+
+.landingPagePragrapheTwo,
+.landingPagePragrapheOne {
+  font-size: 1.2vw;
+}
+
+.landingPageTitleSecondDiv,
+.landingPageTitleFirstDiv {
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey;
+  margin-top: 1vw;
+  padding: 1.5vw;
+}
+
+.landingPageSecondTitle {
+  /* background-color: yellow; */
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+.divMailRecup {
+  background-color: rgb(219, 216, 216);
+  text-align: center;
+  font-size: 1.1vw;
+}
+.formMailRecup {
+  /* background-color: violet; */
+  height: 2vw;
+}
+
+.ulMailRecup {
+  /* background-color: fuchsia; */
+  text-align: center;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 1vw;
+}
+.ulMailRecup li {
+  margin-top: .2vw;
+}
+#buttonMailRecup {
+  background-color: rgb(30, 163, 59);
+  color: white;
+  border: none;
+  padding: 0.25vw 1.5vw;
+  border-radius: 0.2vw;
+  cursor: pointer;  
+}
+
+#buttonMailRecup:hover {
+  
+  background-color: rgb(16, 83, 31);
+}
+
+.divFooter {
+  text-align: center;
+  background-color: rgb(148, 216, 209);
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.footerParagraphe {
+  font-size: 1.5vw;
+}

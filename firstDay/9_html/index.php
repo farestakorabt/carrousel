@@ -1,5 +1,8 @@
 <?php
 
+$title = "Page accueil";
+
+
 require_once "header.php";
 
 

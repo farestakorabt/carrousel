@@ -8,7 +8,9 @@
 
 
 <footer>
-    <h2>C'est le footer</h2>
+    <div class="divFooter">
+        <p class="footerParagraphe">-- Powered by PHP --</p>
+    </div>
 
 </footer>
 

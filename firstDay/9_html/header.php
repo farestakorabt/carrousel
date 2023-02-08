@@ -5,13 +5,14 @@ function lien($lien, $titre)
     $actif = "";
 
     $lienTemp = "/firstDay/9_html/$lien";
+    // var_dump($_SERVER["REQUEST_URI"]);
 
     if($lienTemp === $_SERVER["REQUEST_URI"])
     {
         $actif = "actif";
     } 
 
-    return "<a class='$actif' href='$lien'>$titre</a>";
+    return "<a href='$lien' class='$actif'>$titre</a>";
 }
 
 ?>
@@ -23,21 +24,23 @@ function lien($lien, $titre)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?php if(isset($title)) {
-        echo $title;
+        <?php 
+        if(isset($title)) {
+            echo $title;
         } else {
             echo 'Bienvenue';
         }
        ?> 
     </title>  
     <style> 
-    a {
-        color: black;
-        text-decoration: none;
-    }
-    .actif {
-        color: green;
-    }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .actif {
+            color: green;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -45,5 +48,6 @@ function lien($lien, $titre)
 
         <?= lien('index.php', 'Accueil') ?>
         <?= lien('contact.php', 'Contact') ?>
+        <?= lien('market.php', 'Market') ?>
 
     </nav>

@@ -1,18 +1,6 @@
 <?php
 
-function lien($lien, $titre)
-{
-    $actif = "";
-
-    $lienTemp = "/firstDay/9_html/$lien";
-
-    if($lienTemp === $_SERVER["REQUEST_URI"])
-    {
-        $actif = "actif";
-    } 
-
-    return "<a class='$actif' href='$lien'>$titre</a>";
-}
+include_once "fonctions.php";
 
 ?>
 
@@ -22,31 +10,37 @@ function lien($lien, $titre)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
     <title>
-        <?php if(isset($title)) {
-        echo $title;
-        } else {
-            echo 'Bienvenue';
-        }
+        <?php 
+            if(isset($title)) {
+                echo $title;
+            } else {
+                echo 'Bienvenue';
+            }
        ?> 
     </title>  
     <style> 
-    a {
-        color: black;
-        text-decoration: none;
-    }
-    .actif {
-        color: green;
-    }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .actif {
+            color: green;
+            font-weight: bolder;
+        }
     </style>
 </head>
 <body>
-    <nav>
 
+    <nav class="navigationBar">
         <?= lien('index.php', 'Accueil') ?>
         <?= lien('qui_sommes_nous.php', 'Qui sommes nous') ?>
         <?= lien('contact.php', 'Contact') ?>
         <?= lien('bibliotheque.php', 'Bibliotheque') ?>
-
     </nav>
+
+    <div class="divGenerale">

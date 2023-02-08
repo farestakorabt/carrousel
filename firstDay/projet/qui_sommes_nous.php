@@ -1,4 +1,7 @@
 <?php
+
+    $title = "Page qui sommes nous";
+
     require_once "../projet/include/header.php";
 
 
@@ -51,11 +54,11 @@ if(isset($_POST['mail']))
 
 
 
-<div>
-        <h1 class="titre">Bienvenue sur notre bibliothèque CBU</h1>
+    <div class="landingPageTitleFirstDiv">
+        <h1 class="quiSommesNousTitre">Qui sommes-nous ?</h1>
 
 
-        <img src="../projet/images/biblio1.jpg" alt="bibliothèque" class="image1">
+        <img src="../projet/images/carae-nantes-bibliotheque.jpg" alt="bibliothèque" class="image1">
 
         <p>
             Bienvenue dans ma bibliothèque est une chronique qui vous fait découvrir des romans français ou étrangers ainsi 
@@ -66,41 +69,43 @@ if(isset($_POST['mail']))
 
     </div>
 
-<div>
-        <h2 class="titre">
-            Lorem ipsum dolor sit amet consectetur
-        <h2>
+    <div class="landingPageTitleFirstDiv">
+        <p class="landingPageSecondTitle">
+            Les livres peuvent être lus sous forme numérique
+        <p>
 
 
-        <img src="../projet/images/biblio3.jpg" alt="bibliotheque_nantes" class="image2">
+        <img src="../projet/images/books-gf833d4f8c_1920.jpg" alt="bibliotheque_nantes" class="image2">
 
         <p>
-            Bienvenue dans ma bibliothèque est une chronique.
+         Les livres peuvent être lus sous forme numérique grâce à des dispositifs techniques adaptés aux besoins des personnes handicapées : lecteur audio portable, appareils braille ou équipés de synthèse de parole, systèmes informatiques permettant un affichage en gros caractères, etc.
         </p>
     </div>
 
     <h1><?= $error ?></h1>
     <h1><?= $success ?></h1>
 
-    <form action="" method="POST"> 
-
-   
-
-    <label for="mail">Votre mail</label>
-    <input type="email" name="mail" id="mail">
+    <div class="divMailRecup">
+        <p>Nous contactez ?</p>
+        <form action="" method="POST" class="formMailRecup">     
     
-    <input type="submit" value="S'inscrire">    
-    
-</form>
+            <label for="mail">Votre mail</label>
+            <input type="email" name="mail" id="mail">
+            
+            <input type="submit" value="S'inscrire" id="buttonMailRecup">    
+            
+        </form>
+    </div>
+
 
 <section>
-    <ul>
+    <ul class="ulMailRecup">
         <?php 
            foreach($mails_recus as $mails_recu)
            {
                if($mails_recu != "")
                {
-                   echo "<li>$mails_recu</li>";
+                   echo "<li> - $mails_recu</li>";
                }
            }
         ?>
